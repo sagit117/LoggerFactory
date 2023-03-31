@@ -16,8 +16,10 @@ public abstract class ILogger {
     protected void info(String msg) {
         if (logger.isLoggable(Level.INFO)) logger.info(msg);
     }
-
     protected void warning(String msg) {
         if (logger.isLoggable(Level.WARNING)) logger.warning(msg);
+    }
+    protected void finest(String msg) {
+        if (logger.isLoggable(Level.FINEST)) logger.finest(msg);
     }
 }
