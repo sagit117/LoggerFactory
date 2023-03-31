@@ -12,4 +12,12 @@ public abstract class ILogger {
     public Logger getSelfLogger() {
         return logger;
     }
+
+    protected void info(String msg) {
+        if (logger.isLoggable(Level.INFO)) logger.info(msg);
+    }
+
+    protected void warning(String msg) {
+        if (logger.isLoggable(Level.WARNING)) logger.warning(msg);
+    }
 }
