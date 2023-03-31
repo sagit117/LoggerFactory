@@ -9,8 +9,8 @@ public abstract class ILogger {
         logger = LoggerFactory.getLogger(this.getClass(), logLevel);
     }
 
-    public Logger getSelfLogger() {
-        return logger;
+    public void setLogLevel(Level logLevel) {
+        logger.setLevel(logLevel);
     }
 
     protected void info(String msg) {
