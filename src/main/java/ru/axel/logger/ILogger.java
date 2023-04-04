@@ -17,13 +17,13 @@ public abstract class ILogger {
         logger.setLevel(logLevel);
     }
 
-    public void info(String msg) {
-        if (logger.isLoggable(Level.INFO)) logger.info(msg);
-    }
-    public void warning(String msg) {
-        if (logger.isLoggable(Level.WARNING)) logger.warning(msg);
-    }
-    public void finest(String msg) {
-        if (logger.isLoggable(Level.FINEST)) logger.finest(msg);
-    }
+//    public void info(String msg) {
+//        if (logger.isLoggable(Level.INFO)) logger.info(msg);
+//    }
+//    public void warning(String msg) {
+//        if (logger.isLoggable(Level.WARNING)) logger.warning(msg);
+//    }
+//    public void finest(String msg) {
+//        if (logger.isLoggable(Level.FINEST)) logger.finest(msg);
+//    }
 }
