@@ -9,17 +9,21 @@ public abstract class ILogger {
         logger = LoggerFactory.getLogger(this.getClass(), logLevel);
     }
 
+    public ILogger(Level logLevel, Class<?> clazz) {
+        logger = LoggerFactory.getLogger(clazz, logLevel);
+    }
+
     public void setLogLevel(Level logLevel) {
         logger.setLevel(logLevel);
     }
 
-    protected void info(String msg) {
+    public void info(String msg) {
         if (logger.isLoggable(Level.INFO)) logger.info(msg);
     }
-    protected void warning(String msg) {
+    public void warning(String msg) {
         if (logger.isLoggable(Level.WARNING)) logger.warning(msg);
     }
-    protected void finest(String msg) {
+    public void finest(String msg) {
         if (logger.isLoggable(Level.FINEST)) logger.finest(msg);
     }
 }
