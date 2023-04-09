@@ -9,11 +9,11 @@ public class Main {
     }
 
     static class Test extends ILogger {
-        public Test() {
+        Test() {
             super(Level.ALL);
         }
 
-        public void test(String text) {
+        void test(String text) {
             logger.info(text);
         }
     }
